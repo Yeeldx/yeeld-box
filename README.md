@@ -1,11 +1,11 @@
-# Yearn Vault Contracts
+# Yeeldx Vault Contracts
 
 Please read and be familiar with the [Specification](SPECIFICATION.md).
 
-This repository is the set of smart contracts that are used for the Yearn Vaults.
+This repository is the set of smart contracts that are used for the Yeeldx Vaults.
 It contains the requirements, code, deployment scripts, and tests necessary for the
 core protocol, including a inheritable template strategy for use with Solidity-based
-strategies that interact with Yearn Vaults. These contracts are used to create a simple
+strategies that interact with Yeeldx Vaults. These contracts are used to create a simple
 way to generate high risk-adjusted returns for depositors of various assets via best-
 in-class lending protocols, liquidity pools, and community-made yield farming strategies
 on Ethereum.
@@ -29,8 +29,8 @@ You will need [yarn](https://yarnpkg.com/lang/en/docs/install/) installed.
 It is recommended to use a Python virtual environment.
 
 ```bash
-git clone https://github.com/yearn/yearn-vaults
-cd yearn-vaults
+git clone https://github.com/Yeeldx/Yeeldx-vaults
+cd Yeeldx-vaults
 yarn install --lock-file
 ```
 
@@ -87,8 +87,8 @@ Any command `in code blocks` is meant to be executed from a Mac/Linux terminal o
 11. Close & re-open your terminal before proceeding (to get the new environment variable values)
 12. If you don't have git yet, go [set it up](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/set-up-git)
 13. Pull the repository from GitHub and install its dependencies
-    - `git clone https://github.com/yearn/yearn-vaults`
-    - `cd yearn-vaults`
+    - `git clone https://github.com/Yeeldx/Yeeldx-vaults`
+    - `cd Yeeldx-vaults`
     - `yarn install --lock-file`
       - You may have to install with `--ignore-engines` (try this if you get an error)
 14. Compile the Smart Contracts:
@@ -174,15 +174,15 @@ black .
 
 ## Security
 
-For security concerns, please visit [Bug Bounty](https://github.com/yearn/yearn-vaults/security/policy).
+For security concerns, please visit [Bug Bounty](https://github.com/Yeeldx/Yeeldx-vaults/security/policy).
 
 ## Documentation
 
-You can read more about Yearn Finance on our documentation [webpage](https://docs.yearn.finance).
+You can read more about Yeeldx Finance on our documentation [webpage](https://docs.Yeeldx.finance).
 
 ## Discussion
 
-For questions not covered in the docs, please visit [our Discord server](http://discord.yearn.finance).
+For questions not covered in the docs, please visit [our Discord server](http://discord.Yeeldx.finance).
 
 NODE_OPTIONS=--max_old_space_size=8192  ganache-cli --fork "wss://virulent-quick-aura.arbitrum-mainnet.discover.quiknode.pro/e29d73177b5ecbb8ed18640585b17a281f30c3b1" --networkId 999 -u 0xa688Bc5E676325CC5Fc891ac48Fe442F6298a432 --gasLimit=0x1fffffffffffff --allowUnlimitedContractSize -e 1000000000
 
